@@ -8,29 +8,26 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 public class PresentationView extends View {
 
     public PresentationView(Context context) {
         super(context);
     }
 
-    public PresentationView(Context context, @Nullable AttributeSet attrs) {
+    public PresentationView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public PresentationView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public PresentationView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public PresentationView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public PresentationView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
     @Override
-    protected void onDraw(@NonNull Canvas canvas) {
+    protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
